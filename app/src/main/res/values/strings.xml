@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Word Game</string>
+    <string name="a">A</string>
+    <string name="erase_text">erase</string>
+    <string name="back_text">back</string>
+    <string name="enter_text">enter</string>
+    <string name="solve_text">solve</string>
+    <string name="reset_text">reset</string>
+</resources>

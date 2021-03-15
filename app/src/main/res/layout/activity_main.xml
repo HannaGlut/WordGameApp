@@ -1,0 +1,161 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context="se.hannaglut.wordgame.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tiles_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+                <Button
+                    style="@style/TileStyle" />
+                <Button
+                    style="@style/TileStyle" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+                <Button
+                    style="@style/TileStyle" />
+                <Button
+                    style="@style/TileStyle" />
+                <Button
+                    style="@style/TileStyle" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+                <Button
+                    style="@style/TileStyle" />
+                <Button
+                    style="@style/TileStyle" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/current_word"
+                style="@style/CurrentWordStyle"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/erase_button"
+                android:text="@string/erase_text"
+                app:backgroundTint="@color/red"
+                style="@style/ButtonStyle" />
+            <Button
+                android:id="@+id/back_button"
+                android:text="@string/back_text"
+                app:backgroundTint="@color/yellow"
+                style="@style/ButtonStyle" />
+            <Button
+                android:id="@+id/enter_button"
+                android:text="@string/enter_text"
+                app:backgroundTint="@color/green"
+                style="@style/ButtonStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/solve_button"
+                android:text="@string/solve_text"
+                app:backgroundTint="@color/purple_200"
+                style="@style/ButtonStyle" />
+
+            <Button
+                android:id="@+id/reset_button"
+                style="@style/ButtonStyle"
+                app:backgroundTint="@color/purple_700"
+                android:text="@string/reset_text" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/completedBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:progressTint="@color/teal_200"
+            android:progress="0"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ScrollView
+                android:id="@+id/outputWordScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/found_words_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/FoundWordsStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        style="@style/FoundWordsStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        style="@style/FoundWordsStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        style="@style/FoundWordsStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

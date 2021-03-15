@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+
+    <style name="TileStyle">
+        <item name="android:layout_width">@dimen/tile_width</item>
+        <item name="android:layout_height">@dimen/tile_height</item>
+        <item name="android:layout_marginStart">@dimen/tile_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/tile_margin_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/tile_margin_vertical</item>
+        <item name="android:layout_marginBottom">@dimen/tile_margin_vertical</item>
+        <item name="android:padding">@dimen/tile_padding</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">@dimen/tile_text_size</item>
+    </style>
+
+    <style name="CurrentWordStyle">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_margin">@dimen/current_word_margin</item>
+        <item name="android:textSize">@dimen/current_word_text_size</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:layout_width">@dimen/button_width</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:layout_marginStart">@dimen/button_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/button_margin_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/button_margin_vertical</item>
+        <item name="android:layout_marginBottom">@dimen/button_margin_vertical</item>
+        <item name="android:padding">@dimen/button_padding</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+    </style>
+
+    <style name="FoundWordsStyle">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_margin">@dimen/found_words_margin</item>
+        <item name="android:textSize">@dimen/found_words_text_size</item>
+    </style>
+
+</resources>
